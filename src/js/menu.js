@@ -5,7 +5,6 @@ const overlay = document.querySelector('.overlay');
 let menuActive = false;
 
 if (menuButton && menu && body) {
-    menu.style.display = 'none';
     // Toggle menu if button clicked
     menuButton.addEventListener('click', () => {
         toggleMenu();
@@ -20,7 +19,6 @@ function toggleMenu() {
     if (!menuActive) {
         body.classList.add('menu-active');
         menuButton.classList.add('top-bar__button--active');
-        menu.style.display = 'block';
         menu.setAttribute('aria-hidden', false);
         menuButton.setAttribute('aria-label', 'Close menu');
     } else {
@@ -28,10 +26,6 @@ function toggleMenu() {
         menuButton.classList.remove('top-bar__button--active');
         menu.setAttribute('aria-hidden', true);
         menuButton.setAttribute('aria-label', 'Open menu');
-        // Have timeout to hide display
-        setTimeout(() => {
-            menu.style.display = 'none';
-        }, 300);
     }
 
     menuActive = !menuActive;
