@@ -8,7 +8,7 @@
     left: -100%;
     margin-top: -1px; // To cover top bar border
     z-index: 10;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     opacity: 0;
     will-change: left, opacity;
     visibility: hidden;
