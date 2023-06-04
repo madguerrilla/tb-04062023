@@ -11,12 +11,12 @@
     <header>
         <div class="top-bar">
             <button data-js-menu-button class="top-bar__button" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span aria-hidden="true" focusable="false"></span>
+                <span aria-hidden="true" focusable="false"></span>
+                <span aria-hidden="true" focusable="false"></span>
             </button>
         </div>
-        <nav class="main-nav" aria-label="Main">
+        <nav class="main-nav" data-js-menu aria-hidden="true" aria-label="Main" role="navigation">
             <ul class="main-nav__list">
                 <li class="main-nav__list-item">
                     <a href="#">Adipiscing diam donec</a>
@@ -123,6 +123,8 @@
             </section>
         </main>
     </div>
+
+    <div class="overlay"></div>
 </body>
 
 </html>
